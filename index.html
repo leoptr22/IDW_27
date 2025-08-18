@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscar Médicos</h1>
+    
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Nombre, Apellido...">
+        
+        <select id="especialidades">
+                    <option value="">Cargando especialidades...</option>
+        </select>
+        
+        <select id="obraSocialSelect">
+            <option value="">Todas las obras sociales</option>
+            
+        </select>
+        <button onclick="buscarMedicos()">Buscar</button>
+    </div>
+
+    <table id="resultados">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Especialidad</th>
+                <th>Días de trabajo</th>
+                <th>Obras sociales</th>
+                <th>Teléfono</th>
+            </tr>
+        </thead>
+        <tbody id="tablaMedicos">
+            <!-- Los resultados se cargarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="medicos.json"></script>
+    <script src="script.js"></script>
+     <script src="utils/lista_especialidades.js"></script>
+    <script src="utils/lista_obra_sociales.js"></script>
+</body>
+</html>
