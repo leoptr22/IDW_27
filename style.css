@@ -1,0 +1,27 @@
+body {
+  margin: 40px; /* espacio alrededor de toda la página */
+}
+
+.espaciado {
+  margin-top: 20px;    /* espacio arriba */
+  margin-bottom: 20px; /* espacio abajo */
+  margin-left: 10px;   /* espacio a la izquierda */
+  margin-right: 10px;  /* espacio a la derecha */}
+
+  h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  color: #e91881;       /* color del texto */
+  text-decoration: underline; /* subrayado */
+}
+
+ul.sin-puntos {
+  list-style: none; /* quita los puntos solo de esta lista */
+  padding: 0;       /* quita el indentado */
+}
+
+ul.sin-puntos li {
+  margin-bottom: 10px;
+}
