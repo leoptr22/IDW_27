@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+    background-color: rgba(58, 127, 184, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.header{
+    background-image: url('https://imgs.search.brave.com/WsnejdEZp7bTQtUZxGaiymGVFi_36CisBG23vWgLFYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtZ3JhdGlz/L21lZGljYS1lbS1z/ZXUtY29uc3VsdG9y/aW8tY29tLWVzcGFj/by1kZS1jb3BpYV8y/My0yMTQ4OTQ3NjMy/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA'); 
+    image-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.frase{
+    font-family: 'Tuffy', Arial, sans-serif;
+    font-size: 20px;
+    color: #1e0b75ff;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mainidw{
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgba(82, 95, 218, 0.95);;
+    margin: 0;
+    
+}
+
+.idw{
+    text-align: center;
+    background-color: rgba(79, 149, 207, 0.5);
+    color: white;
+
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 36px;
+    margin:  0;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 50;
+    padding: 50;
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+.nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+
+// Estilos para la sección de staff médico
+
+html,
+    body {
+      position: relative;
+      height: 70%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 80%;
+      height: 50%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
