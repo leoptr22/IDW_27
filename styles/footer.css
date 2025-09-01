@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Merienda&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.footer {
+    background-color: rgba(79, 149, 207, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 28px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh; 
+}
+
+.footer a {
+    color: #5e7aafff;
+    margin: 0 10px;
+    font-family: Tuffy, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px;
+    padding: 2px 6px;
+    transition: background-color 0.3s;
+}
+
+.footer a:hover {
+    background-color: #adbbd6ff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    transition: background-color 0.3s;
+}
+
+.h2-footer {
+    font-family: 'Tuffy', Arial, sans-serif;
+    font-size: 36px;
+    margin: 10px 0;
+}
+.h3-footer {
+    font-size: 24px;
+    margin: 5px 0 15px 0;
+}
+.p-footer {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
