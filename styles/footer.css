@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Merienda&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 .footer {
     background-color: rgba(79, 149, 207, 0.5);
@@ -16,7 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 30vh; 
+    height: 40vh; 
 }
 
 .footer a {

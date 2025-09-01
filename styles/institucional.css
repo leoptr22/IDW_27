@@ -1,0 +1,33 @@
+.info-institucional {
+  padding: 30px;
+  margin:  auto;
+  max-width: 900px;
+  color: #f6f8faff;
+  font-family: 'Tuffy', Arial, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 1.7;
+}
+
+.info-institucional h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0e3d66;
+}
+
+.info-institucional h3 {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #265a88;
+}
+
+.info-institucional ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.info-institucional p,
+.info-institucional li {
+  font-size: 18px;
+}
