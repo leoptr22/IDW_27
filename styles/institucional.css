@@ -7,6 +7,14 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   line-height: 1.7;
+  background-color: rgba(79, 149, 207, 0.5);
+}
+
+.info-institucional :hover {
+  
+  color: #0e3d66;
+    transition: color 0.3s ease;
+    
 }
 
 .info-institucional h2 {
