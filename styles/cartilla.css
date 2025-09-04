@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    color: #003366;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(to right, #0059b3, #66b3ff);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Tabla */
+table {
+    width: 95%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #0059b3;
+    color: white;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: #cce0ff;
+    transition: background-color 0.3s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #99c2ff;
+}
+
+tbody tr:hover {
+    background-color: #66b3ff;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #b3d1ff;
+}

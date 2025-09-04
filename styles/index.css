@@ -134,4 +134,18 @@ html,
       width: 100%;
       height: 100%;
       object-fit: cover;
+<<<<<<< HEAD
+=======
+    }
+
+    .consejo {
+      font-family: 'Tuffy', Arial, sans-serif;
+      font-size: 20px;
+      color: #518bd1;
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+
+>>>>>>> d35377dca6021107c5eddbd22a50892a0e65a6bc
     }
