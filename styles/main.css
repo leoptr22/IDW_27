@@ -1,11 +1,11 @@
 
 .mainidw{
     font-family: Arial, sans-serif;
+    height: 130vh;
     margin: 0;
     padding: 40px 20px;
     box-sizing: border-box;
     background-color: rgba(58, 127, 184, 0.5);
-    min-height: calc(100vh - 200px);
 
     }
 
