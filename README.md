@@ -1,5 +1,9 @@
-<<<<<<< HEAD
-Trabajo practico instroduccion a desarrollo web
-=======
-esta rama es donde trabaja Leonel
->>>>>>> d35377dca6021107c5eddbd22a50892a0e65a6bc
+soporte_master_dev
+Esta es la rama principal del proyecto CLINICA IDW del grupo 27
+integrado por
+* Leonel Piter
+* Cintia Rios
+* Myriam Canosa
+* Fernanda Luna
+* Rita Herrera
+
