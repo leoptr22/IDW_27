@@ -1,4 +1,3 @@
-soporte_master_dev
 Esta es la rama principal del proyecto CLINICA IDW del grupo 27
 integrado por
 * Leonel Piter
