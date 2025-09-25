@@ -1,8 +1,7 @@
 
- let medicos = [];
 
 
-fetch ("data/medicos.json") 
+fetch ("../data/medicos.json") 
     .then (response => {
         if (response.ok) {
             return response.json();

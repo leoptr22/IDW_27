@@ -1,0 +1,11 @@
+en cartilla.html 
+
+ajustar el color del menu hamburguesa
+
+institucional
+
+falta adaptacion navbar
+
+
+
+en el resto, ver conflicto de estilos en boton "reservar turno ahora" 
