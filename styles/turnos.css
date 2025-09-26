@@ -1,0 +1,46 @@
+
+
+
+.bodyturnos {
+   
+    background-color: rgba(188, 219, 231, 0.95);
+}
+
+
+
+.turnos {
+    text-align: center;
+    color: #334c92ff;
+    font-size: 28px;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+
+    
+}
+
+.turno-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 5px;
+    align-items: center;
+}
+.turno-form label{
+    font-weight: bold;
+}
+.turno-form select, .turno-form input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.turno-form button{
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.turno-form button:hover{
+    background-color: #218838;
+}
