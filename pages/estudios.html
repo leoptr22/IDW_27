@@ -52,38 +52,158 @@
 
   <main class="mainidw">
     
-    <section class="estudios">
-      <h2>Especialidades Médicas</h2>
-      
-      <div class="galeria-estudios">
-        <div class="card-estudio">
-          <img src="../Assets/Estudios/ecodoppler.webp" alt="Electrocardiograma">
-          <h4>Electrocardiogramas</h4>
-        </div>
+    <section class="estudios container py-5">
+  <h2 class="text-center mb-4">Especialidades Médicas</h2>
+  <p class="text-center mb-4 px-3">
+  En Clínica IDW contamos con tecnología de vanguardia y profesionales altamente capacitados para realizar estudios médicos precisos y confiables. A continuación, te presentamos nuestras principales especialidades diagnósticas, pensadas para cuidar tu salud con compromiso y excelencia.
+</p>      
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-        <div class="card-estudio">
-          <img src="../Assets/Estudios/Electroencefalograma.webp" alt="Electroencefalograma">
-          <h4>Electroencefalogramas</h4>
-        </div>
+  <!-- Electrocardiograma -->
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0 estudio-card">
+      <img src="../Assets/Estudios/ecodoppler.webp" class="card-img-top" alt="Electrocardiograma">
+      <div class="card-body">
+        <h5 class="card-title">Electrocardiograma</h5>        
+        <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalECG">
+  <i class="bi bi-info-circle me-1"></i> Ver más
+</button>
 
-        <div class="card-estudio">
-          <img src="../Assets/Estudios/Ecografia.webp" alt="Ecografía">
-          <h4>Ecografías</h4>
-        </div>
-
-        <div class="card-estudio">
-          <img src="../Assets/Estudios/ecodoppler.webp" alt="ecodoppler">
-          <h4>Eco doppler</h4>
-        </div>
-
-        <div class="card-estudio">
-          <img src="../Assets/Estudios/Radiologia.webp" alt="Radiologia">
-          <h4>Radiologia</h4>
-        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Electroencefalograma -->
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0 estudio-card">
+      <img src="../Assets/Estudios/Electroencefalograma.webp" class="card-img-top" alt="Electroencefalograma">
+      <div class="card-body">
+        <h5 class="card-title">Electroencefalograma</h5>        
+        <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalEEG">
+  <i class="bi bi-info-circle me-1"></i> Ver más
+</button>
+ 
+      </div>
+    </div>
+  </div>
+
+  <!-- Ecografía -->
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0 estudio-card">
+      <img src="../Assets/Estudios/Ecografia.webp" class="card-img-top" alt="Ecografía">
+      <div class="card-body">
+        <h5 class="card-title">Ecografía</h5>        
+       <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalEco">
+  <i class="bi bi-info-circle me-1"></i> Ver más
+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eco Doppler -->
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0 estudio-card">
+      <img src="../Assets/Estudios/ecodoppler.webp" class="card-img-top" alt="Eco Doppler">
+      <div class="card-body">
+        <h5 class="card-title">Eco Doppler</h5>        
+       <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalDoppler">
+  <i class="bi bi-info-circle me-1"></i> Ver más
+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Radiología -->
+  <div class="col">
+    <div class="card h-100 text-center shadow-sm border-0 estudio-card">
+      <img src="../Assets/Estudios/Radiologia.webp" class="card-img-top" alt="Radiología">
+      <div class="card-body">
+        <h5 class="card-title">Radiología</h5>        
+       <button class="btn btn-light btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalRadio">
+  <i class="bi bi-info-circle me-1"></i> Ver más
+</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
     </section>
   </main>
+<!-- Modal Electrocardiograma -->
+<div class="modal fade" id="modalECG" tabindex="-1" aria-labelledby="modalECGLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalECGLabel">Electrocardiograma</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        El electrocardiograma (ECG) es un estudio no invasivo que registra la actividad eléctrica del corazón. Se utiliza para detectar arritmias, bloqueos cardíacos, infartos previos y otras afecciones. Es rápido, indoloro y no requiere preparación especial.
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Modal Electroencefalograma -->
+<div class="modal fade" id="modalEEG" tabindex="-1" aria-labelledby="modalEEGLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEEGLabel">Electroencefalograma</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        El electroencefalograma (EEG) mide la actividad eléctrica del cerebro. Es útil para diagnosticar epilepsia, trastornos del sueño, encefalopatías y otras condiciones neurológicas. Se realiza colocando electrodos en el cuero cabelludo.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ecografía -->
+<div class="modal fade" id="modalEco" tabindex="-1" aria-labelledby="modalEcoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEcoLabel">Ecografía</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        La ecografía utiliza ondas de ultrasonido para generar imágenes de órganos internos. Es común en estudios obstétricos, abdominales, renales y musculares. No emite radiación y es segura durante el embarazo.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Eco Doppler -->
+<div class="modal fade" id="modalDoppler" tabindex="-1" aria-labelledby="modalDopplerLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalDopplerLabel">Eco Doppler</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        El eco Doppler evalúa el flujo sanguíneo en arterias y venas. Es clave para detectar obstrucciones, trombosis, varices y problemas circulatorios. Se realiza con un transductor sobre la piel.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Radiología -->
+<div class="modal fade" id="modalRadio" tabindex="-1" aria-labelledby="modalRadioLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalRadioLabel">Radiología</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        La radiología médica utiliza rayos X para obtener imágenes internas del cuerpo. Es fundamental para diagnosticar fracturas, infecciones, tumores y enfermedades pulmonares. Requiere precauciones en embarazadas.
+      </div>
+    </div>
+  </div>
+</div>
   <footer class="footer text-dark pt-4 pb-3 ">
   <div class="container">
     <div class="row text-start">
