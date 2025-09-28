@@ -1,7 +1,8 @@
 
 .mainidw{
     font-family: Arial, sans-serif;
-    height: 130vh;
+    height: auto;
+    
     margin: 0;
     padding: 40px 20px;
     box-sizing: border-box;
