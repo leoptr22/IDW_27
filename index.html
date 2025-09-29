@@ -4,12 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/cartilla.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/cartilla.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- cdn / bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
     <title>Clinica Idw 27</title>
@@ -17,20 +21,36 @@
 <body>
 
     <header class="header">
-        <h1 class="idw">Clinica IDW SA</h1>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li ><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/cartilla.html" >Cartilla médica</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/institucional.html">Institucional</a></li>
-                <li><a href="./pages/estudios.html">especialidades</a></li>
-                <li ><a  href="admin.html">Admin</a></li>
-            </ul>
 
-        </nav>
+         <nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./Assets/Estudios/logo idw.png" class="d-inline-block align-text-top" style="height: 50px;" alt="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+        aria-controls="menu" aria-expanded="false" aria-label="Menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/cartilla.html">Cartilla médica</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/institucional.html">Institucional</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/estudios.html">Especialidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pages/admin.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        <h1 class="idw ">Clinica IDW SA </h1>
+
+        
+
         <div>
-            <button class="btn" onclick="">Reservar Turno Ahora</button>
+            <a href="./pages/turnos.html"><button class="btn" >Reservar Turno Ahora</button></a>
 
         </div>
 
@@ -41,7 +61,7 @@
 
     </header>
 
-    <main class="mainidw">
+    <main class="mainidw_index">
         <h2 class="bienvenida">Bienvenidos a la Clínica IDW</h2>
         <p class="descripcion">Reserva tu turno médico de manera rápida y sencilla. Contamos con los mejores profesionales y especialidades para cuidar tu salud.</p>
       
@@ -49,6 +69,8 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="https://imgs.search.brave.com/cTvLtqlA-qEGD1se1sRHC1adD5IjmEcY1hf6CoAfLDQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTEz/OTY2NTg2Mi9wdC9m/b3RvL3Nlbmlvci1t/YWxlLWRvY3Rvci1z/bWlsaW5nLW9uLXdo/aXRlLWJhY2tncm91/bmQuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVhkZnBIQk9O/dEV0bFIxMENEVmk2/NF9wV250ZlRBcVF2/dW1NX2JSU3h1VUE9"> </div>
+                <div class="swiper-slide"><img src="https://imgs.search.brave.com/jqe_NH1hQv-OcthfU1bbi99Ri6GZ5sYyFMlbIRfJN8Y/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2MxLzYz/LzIyL2MxNjMyMmM3/MDZmY2I3NmQxMGFh/MDlmODQyZDhkMjdh/LmpwZw"> </div>
+
                 <div class="swiper-slide"><img src="https://imgs.search.brave.com/p5-NXEaVPQJH5lsAS1RN2_4suE1aphhWlpP2IJJFLnM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAyLzEzLzAzLzIy/LzM2MF9GXzIxMzAz/MjI5Ml9pZTNWMlMz/SHNpaVFra1I1QjFZ/VjE1SHQycWZxclFp/UC5qcGc"></div>
                 <div class="swiper-slide"><img src="https://imgs.search.brave.com/nQE4H8I8VCaBlBWQSVyjeVDuZpl-1nw44OcZOmpXX1M/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9oYXBw/eS1tZWRpY2FsLWV4/cGVydC0yMDQ0NDg1/OS5qcGc"> </div>
                 <div class="swiper-slide"><img src="https://imgs.search.brave.com/fbGKS_tdApryH371leFxbOG_eqi2PrS6R-wTZdgY2Io/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzIxLzg2LzQz/LzM2MF9GXzEyMjE4/NjQzOTZfV0N1d3k1/YmdaSUVTMU9mdW96/cWF6SWswa3E3WHZ3/OVUuanBn"></div>
@@ -64,18 +86,65 @@
     </main>
 
      <!-- footer -->
-<footer class="footer">
-    <h2 class="h2-footer">IDW Salud</h2>
-    <h3 class="h3-footer">Tu salud, nuestra prioridad.</h3>
-    <p class="p-footer">&copy; 2024 Clínica IDW. Todos los derechos reservados.</p>
-    <p>
-        Contacto:
-        <a href="mailto:leopiter@gmail.com">Email</a>
-        <a href="#">Whatsapp</a>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-    </p>
+<footer class="footer text-dark pt-4 pb-3 ">
+  <div class="container">
+    <div class="row text-start">
+
+      <!--  Logo -->
+      <div class="col-md-3 mb-3 d-flex align-items-start">
+        <img src="./Assets/Estudios/logo idw.png" alt="IDW Salud Logo" width="60" class="me-2 mt-1">
+        <div>
+          <h6 class="mb-1">Clínica IDW</h6>
+          <small>Tu salud, nuestra prioridad.</small>
+        </div>
+      </div>
+
+      <!--  Contacto -->
+      <div class="col-md-3 mb-3">
+        <h6>Contacto</h6>
+        <ul class="list-unstyled small mb-0">
+          <li><i class="bi bi-geo-alt-fill me-2"></i>Av. Primera Junta y Ruta 136, Gualeguaychú, Entre Ríos</li>
+          <li><i class="bi bi-telephone-fill me-2"></i>(+54) 3446 123456</li>
+          <li><i class="bi bi-phone-fill me-2"></i>+54 9 3446 789876</li>
+          <li><i class="bi bi-envelope-fill me-2"></i>
+            <a href="mailto:info@idwsalud.com" class="text-decoration-none">info@idw.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--  Redes y horarios -->
+      <div class="col-md-3 mb-3">
+        <h6>Redes Sociales</h6>
+        <div class="mb-2">
+          <a href="#" class="text-dark me-3 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark me-3 fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-dark me-3 fs-5"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <h6>Horarios de Atención</h6>
+        <p class="small mb-1">Lunes a Viernes: 8:00 - 20:00</p>
+        <p class="small mb-0">Sábados: 9:00 - 13:00</p>
+      </div>
+
+      <!--  Mapa -->
+      <div class="col-md-3 mb-3">
+        <div class="ratio ratio-4x3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3346.4344419490676!2d-58.52166143116481!3d-32.99231994394346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1758840019675!5m2!1ses!2sar" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <hr class="mt-4">
+    <div class="text-center small">
+      &copy; 2024 Clínica IDW. Todos los derechos reservados.
+      <a href="#"><i class="bi bi-arrow-up-circle-fill"></i> Subir</a>
+    </div>
+  </div>
 </footer>
+
+
 
 
           
@@ -87,4 +156,7 @@
     <!-- <script src="/utils/lista_especialidades.js"></script>
     <script src="/utils/lista_obra_sociales.js"></script> -->
    
+                        <!-- cdn / bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>

@@ -9,21 +9,19 @@
       font-size: 14px;
       color: #fff;
       margin: 0;
-      padding: 0;
       position: relative;
       height: 70%;
     }
 
 
 .navbar{
-    background-color: rgba(58, 127, 184, 0.5);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: blue ligth;
+    
 
     
 }
+
+
 
 
 .header {
@@ -42,30 +40,30 @@
 .frase{
     font-family: 'Tuffy', Arial, sans-serif;
     font-size: 20px;
-    color: #2a5d9f;
+    color: #000000ff;
     text-align: center;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
 }
 
-.mainidw{
+.mainidw_index{
     height: 100vh;
     padding: 0;
     box-sizing: border-box;
-    background: rgba(172, 177, 218, 0.95);;
+    background: rgba(196, 208, 212, 0.95);
     margin: 0;
     
 }
 
-.idw{
-    text-align: center;
-    background-color: rgba(79, 149, 207, 0.5);
-    color: white;
-    margin: 0;
-
-    font-family: Major Mono Display, Arial, sans-serif;
-    font-size: 36px;
+.idw {
+  text-align: center;
+  background-color: rgba(79, 149, 207, 0.5);
+  color: white;
+  margin-top: 80px;
+  padding: 20px 0;
+  font-family: 'Major Mono Display', Arial, sans-serif;
+  font-size: 36px;
 }
 
 
@@ -98,10 +96,11 @@
    
 }
 
-.nav-links li a:hover {
-    background-color: #6791b3ff;
+.navbar-nav .nav-link:hover {
+  background-color: #6791b3;
+  color: #fff !important;
+  border-radius: 4px;
 }
-
 
 
 

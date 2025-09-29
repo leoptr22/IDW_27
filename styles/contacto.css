@@ -8,6 +8,8 @@ body {
   min-height: calc(100vh - 200px);
   padding: 40px 20px;
   box-sizing: border-box;
+      background: rgba(196, 208, 212, 0.95);
+
 }
 
 .contacto-container {

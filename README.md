@@ -1,4 +1,3 @@
-soporte_master_dev
 Esta es la rama principal del proyecto CLINICA IDW del grupo 27
 integrado por
 * Leonel Piter
@@ -7,3 +6,4 @@ integrado por
 * Fernanda Luna
 * Rita Herrera
 
+https://github.com/leoptr22/IDW_27
