@@ -30,16 +30,14 @@ body {
     color: var(--color-texto);
 }
 
-/* ==========================
-   Navbar / Encabezado
-========================== */
+
 .encabezado {
     text-align: center;
     padding: 20px 5%;
 }
 
 .franja-titulo {
-    background-color: #3a7fb8; /* celeste oscuro igual que admin */
+    background-color: #3a7fb8; 
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -58,9 +56,7 @@ body {
 
 
 
-/* ==========================
-   Contenido principal
-========================== */
+
 .contenedor-principal {
     padding: 30px 5%;
     max-width: 1200px;
@@ -71,7 +67,7 @@ body {
 .contenedor-principal h1,
 .contenedor-principal h2,
 .titulo-seccion {
-    font-family: 'Arial', sans-serif; /* o la que usa admin */
+    font-family: 'Arial', sans-serif; 
     color: var(--color-principal);
     font-weight: bold;
 }
@@ -87,9 +83,7 @@ body {
     width: 100%;
 }
 
-/* ==========================
-   Tarjetas de médicos
-========================== */
+
 .lista-medicos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -97,7 +91,7 @@ body {
 }
 
 .tarjeta-medico {
-    background-color: rgba(58, 127, 184, 0.1); /* Antes era blanco, ahora azul clarito */
+    background-color: rgba(58, 127, 184, 0.1); 
     border-radius: 8px;
     box-shadow: var(--sombra-tarjeta);
     padding: 20px;
@@ -124,15 +118,15 @@ body {
 }
 
 .info-principal p {
-    color: var(--color-texto); /* Asegura que las matriculas se vean */
+    color: var(--color-texto); 
     font-size: 0.9em;
 
 }
 
 .especialidad {
     display: inline-block;
-    background-color: #c0c0c0;  /* Gris medio, más visible sobre el azul */
-    color: #333333;              /* Gris oscuro para el texto */
+    background-color: #c0c0c0;  
+    color: #333333;             
     padding: 5px 12px;
     border-radius: 20px;
     font-weight: bold;
@@ -141,9 +135,7 @@ body {
     text-align: center;
 }
 
-/* ==========================
-   Footer
-========================== */
+
 .pie-pagina {
     background-color: var(--color-footer);
     color: var(--color-footer-texto);
@@ -153,9 +145,7 @@ body {
     font-size: 0.9em;
 }
 
-/* ==========================
-   Responsive
-========================== */
+
 @media (max-width: 768px) {
     .lista-medicos {
         grid-template-columns: 1fr;
