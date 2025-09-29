@@ -1,11 +1,12 @@
-
-//* ==========================
+/* ==========================
    Variables globales
 ========================== */
 :root {
     --color-principal: #3a7fb8;  /* Azul principal */
     --color-texto: #333333;      /* Gris oscuro */
     --sombra-tarjeta: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --color-footer: #333333;
+    --color-footer-texto: #ffffff;
 }
 
 /* ==========================
@@ -19,18 +20,26 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: rgba(58, 127, 184, 0.2);
+    background-color: rgba(58, 127, 184, 0.1);
+    color: var(--color-texto);
 }
 
 /* ==========================
-   Encabezado
+   Navbar / Encabezado
 ========================== */
 .encabezado {
-    background-color: var(--color-principal);
-    color: white;
-    padding: 20px 5%;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 5%;
+}
+
+h1.idw {
+    font-family: 'Arial Black', Arial, sans-serif; /* Tipografía similar a admin */
+    color: var(--color-principal);
+    font-size: 2.5em;
+    margin-top: 80px; /* Para no tapar con el navbar fijo */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 /* ==========================
@@ -40,6 +49,15 @@ body {
     padding: 30px 5%;
     max-width: 1200px;
     margin: 0 auto;
+
+}
+
+.contenedor-principal h1,
+.contenedor-principal h2,
+.titulo-seccion {
+    font-family: 'Arial', sans-serif; /* o la que usa admin */
+    color: var(--color-principal);
+    font-weight: bold;
 }
 
 .titulo-seccion {
@@ -63,7 +81,7 @@ body {
 }
 
 .tarjeta-medico {
-    background-color: white;
+    background-color: rgba(58, 127, 184, 0.1); /* Antes era blanco, ahora azul clarito */
     border-radius: 8px;
     box-shadow: var(--sombra-tarjeta);
     padding: 20px;
@@ -71,13 +89,14 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .tarjeta-medico:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
+
 
 .foto-medico {
     width: 100px;
@@ -88,47 +107,41 @@ body {
     border: 3px solid var(--color-principal);
 }
 
-.info-principal h3 {
-    color: var(--color-principal);
-    margin-bottom: 5px;
+.info-principal p {
+    color: var(--color-texto); /* Asegura que las matriculas se vean */
+    font-size: 0.9em;
+
 }
 
 .especialidad {
     display: inline-block;
-    background-color: #e9ecef;
-    color: var(--color-texto);
-    padding: 5px 10px;
+    background-color: #c0c0c0;  /* Gris medio, más visible sobre el azul */
+    color: #333333;              /* Gris oscuro para el texto */
+    padding: 5px 12px;
     border-radius: 20px;
     font-weight: bold;
     font-size: 0.9em;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 /* ==========================
    Footer
 ========================== */
 .pie-pagina {
-    background-color: #333;
-    color: white;
+    background-color: var(--color-footer);
+    color: var(--color-footer-texto);
     text-align: center;
-    padding: 15px 5%;
+    padding: 20px 5%;
     margin-top: 30px;
+    font-size: 0.9em;
 }
 
 /* ==========================
    Responsive
 ========================== */
 @media (max-width: 768px) {
-    .navegacion {
-        flex-direction: column;
-    }
-    .buscador, .btn-buscar {
-        width: 100%;
-        margin-bottom: 10px;
-    }
     .lista-medicos {
         grid-template-columns: 1fr;
     }
 }
-
-

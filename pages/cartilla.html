@@ -1,16 +1,44 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartilla Médica - Prueba</title>
-    <!-- Enlazamos el CSS -->
-    <link rel="stylesheet" href="cartilla.css">
-</head>
+    <title>Cartilla Médica - Clínica IDW</title>
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/cartilla.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+
+  </head>
 <body>
-    <!-- Encabezado -->
-    <header class="encabezado">
-        <h1>Cartilla Médica y Especialidades</h1>
+
+    <!-- Navbar estilo admin -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Assets/Estudios/logo idw.png" class="d-inline-block align-text-top" style="height: 50px;" alt="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cartilla.html">Cartilla médica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estudios.html">Especialidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="idw encabezado" style="margin-top:80px;">Cartilla Médica</h1>
     </header>
 
     <!-- Contenido principal -->
@@ -18,43 +46,97 @@
         <h2 class="titulo-seccion">Nuestro Equipo Médico</h2>
 
         <div class="lista-medicos">
-            <!-- Tarjeta 1 -->
+            <!-- Tarjetas de médicos (igual que tenías) -->
             <div class="tarjeta-medico">
-                <img src="../fotos/doctor1.jpg" alt="Dr. Pérez" class="foto-medico">
+                <img src="../fotos/1.jpg" alt="Dr. Pérez" class="foto-medico">
                 <div class="info-principal">
                     <h3>Dr. Juan Pérez</h3>
                     <p class="especialidad">Cardiología</p>
-                    <p>Más de 15 años de experiencia en diagnóstico y tratamiento cardiovascular.</p>
+                    <p>Matrícula: 256985.</p>
                 </div>
             </div>
 
-            <!-- Tarjeta 2 -->
             <div class="tarjeta-medico">
-                <img src="fotos/doctor2.jpg" alt="Dra. López" class="foto-medico">
+                <img src="../fotos/2.jpg" alt="Dr. Aboy Manuel" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dr. Manuel Aboy</h3>
+                    <p class="especialidad">Traumatologìa</p>
+                    <p>Matrícula: 254796</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/3.jpg" alt="Dr. Rizzo" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dr. Osvaldo Rizzo</h3>
+                    <p class="especialidad">Clínica Médica</p>
+                    <p>Matrícula: 482365 </p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/4.jpg" alt="Dra. Chan" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Maía Chan</h3>
+                    <p class="especialidad">Psicología</p>
+                    <p>Matrícula: 823654 </p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/5.jpg" alt="Dra. Fuente" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Hilda Fuente</h3>
+                    <p class="especialidad">Neurologìa</p>
+                    <p>Matrícula: 221896</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/6.jpg" alt="Dra. Arce" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Florencia Arce</h3>
+                    <p class="especialidad">Nutrición</p>
+                    <p>Matrícula: 465686</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/7.jpg" alt="Dra. Ramirez" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Débora Ramírez</h3>
+                    <p class="especialidad">Cirugía</p>
+                    <p>Matrícula: 7785462</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/8.jpg" alt="Dra. López" class="foto-medico">
                 <div class="info-principal">
                     <h3>Dra. Ana López</h3>
                     <p class="especialidad">Pediatría</p>
-                    <p>Atención especializada en el cuidado integral de niños y adolescentes.</p>
+                    <p>Matrícula: 889236</p>
                 </div>
             </div>
 
-            <!-- Tarjeta 3 -->
             <div class="tarjeta-medico">
-                <img src="fotos/doctor3.jpg" alt="Dr. Gómez" class="foto-medico">
+                <img src="../fotos/9.jpg" alt="Dra. Majer" class="foto-medico">
                 <div class="info-principal">
-                    <h3>Dr. Carlos Gómez</h3>
-                    <p class="especialidad">Traumatología</p>
-                    <p>Especialista en lesiones deportivas y rehabilitación motora.</p>
+                    <h3>Dra. Leticia Majer</h3>
+                    <p class="especialidad">Obstetricia</p>
+                    <p>Matrícula: 387236.</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Pie de página -->
-    <footer class="pie-pagina">
-        <p>© 2025 Clínica Ejemplo - Todos los derechos reservados</p>
+    <!-- Footer estilo admin -->
+    <footer class="pie-pagina mt-4">
+        <p>© 2025 Clínica IDW - Todos los derechos reservados</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
-
