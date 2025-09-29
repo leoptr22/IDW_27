@@ -32,15 +32,28 @@ body {
     padding: 20px 5%;
 }
 
+.franja-titulo {
+    background-color: #3a7fb8; /* celeste oscuro igual que admin */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 h1.idw {
-    font-family: 'Arial Black', Arial, sans-serif; /* Tipografía similar a admin */
-    color: var(--color-principal);
-    font-size: 2.5em;
-    margin-top: 80px; /* Para no tapar con el navbar fijo */
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: white; /* color de la letra sobre la franja */
+    background-color: rgba(58, 127, 184, 0.5); /* azul clarito semi-transparente */
+    display: inline-block; /* para que no ocupe todo el ancho */
+    padding: 5px 15px; /* ajusta alto y ancho de la franja */
+    font-size: 1.8em; /* tamaño similar al admin */
     text-transform: uppercase;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-top: 80px; /* para no tapar navbar fijo */
+    border-radius: 4px; /* opcional, bordes redondeados como admin */
 }
+
 
 /* ==========================
    Contenido principal
