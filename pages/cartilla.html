@@ -3,107 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartilla Médica IDW S.A.</title>
+    <title>Cartilla Médica - Clínica IDW</title>
+    <!-- CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/admin.css">
     <link rel="stylesheet" href="../styles/cartilla.css">
-    
-    <!-- cdn / bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-
-    
-</head>
+  </head>
 <body>
-    <header>
 
-        <nav class="navbar navbar-expand-lg fixed-top ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../Assets/Estudios/logo idw.png" class="d-inline-block align-text-top" style="height: 50px;" alt="logo">
-      </a>
+    <!-- Navbar estilo admin -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Assets/Estudios/logo idw.png" class="d-inline-block align-text-top" style="height: 50px;" alt="logo">
+                </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-        aria-controls="menu" aria-expanded="false" aria-label="Menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/cartilla.html">Cartilla médica</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/institucional.html">Institucional</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/estudios.html">Especialidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/admin.html">Admin</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cartilla.html">Cartilla médica</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="institucional.html">Institucional</a></li>
+                        <li class="nav-item"><a class="nav-link" href="estudios.html">Especialidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <h1 class="idw ">Clinica IDW SA </h1>
+   </header>
 
+    <!-- Contenido principal -->
+    <main class="contenedor-principal">
+        <h2 class="titulo-seccion">Nuestro Equipo Médico</h2>
 
-        <h1>Cartilla Médica </h1>
-        <p>Encuentra a nuestros profesionales por especialidad, localidad y dirección.</p>
-    </header>
+        <div class="lista-medicos">
+            <!-- Tarjetas de médicos (igual que tenías) -->
+            <div class="tarjeta-medico">
+                <img src="../fotos/1.jpg" alt="Dr. Pérez" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dr. Juan Pérez</h3>
+                    <p class="especialidad">Cardiología</p>
+                    <p>Matrícula: 256985.</p>
+                </div>
+            </div>
 
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Especialidad</th>
-                    <th>Profesional</th>
-                    <th>Localidad</th>
-                    <th>Dirección</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Clínica Médica</td><td>Gammel Elsa Haydée</td><td>Adrogué</td><td>Salta 1315, Gran Bs.As (Sur)</td></tr>
-                <tr><td>Clínica Médica</td><td>Asnal, Cecilia</td><td>Almagro</td><td>Av. Rivadavia 4415, CABA</td></tr>
-                <tr><td>Kinesiología Adultos</td><td>Pedreira, Mariela</td><td>Almagro</td><td>Gascón 1057, CABA</td></tr>
-                <tr><td>Psicología Adolescentes y Adultos</td><td>Ariztegui, Mercedes Isabel</td><td>Almagro</td><td>Perón 4023, CABA</td></tr>
-                <tr><td>Clínica Médica</td><td>Bruno Agostina</td><td>Avellaneda</td><td>Av. Mitre 501, Avellaneda</td></tr>
-                <tr><td>Dermatología</td><td>Santos Muñoz, Andrea</td><td>Avellaneda</td><td>Av. Mitre 501, Avellaneda</td></tr>
-                <tr><td>Clínica Médica</td><td>Breme, Gustavo Adolfo</td><td>Balvanera</td><td>Otamendi 629, CABA</td></tr>
-                <tr><td>Ortopedia y Traumatología</td><td>Catalá, Ernesto</td><td>Balvanera</td><td>Av. Corrientes 2835, CABA</td></tr>
-                <tr><td>Clínica Médica - Geriatría</td><td>López Wotzman, Mara</td><td>Bariloche</td><td>Rivadavia 105, Río Negro</td></tr>
-                <tr><td>Reumatología</td><td>Kirmayr, Karin Ingrid</td><td>Bariloche</td><td>Mitre 124, Río Negro</td></tr>
-                <tr><td>Neumonología Pediátrica</td><td>Andrada Gabriela</td><td>Barrio Norte</td><td>Beruti 3240, CABA</td></tr>
-                <tr><td>Onco Ortopedia</td><td>Jorge, Fernando Daniel</td><td>Barrio Norte</td><td>Vicente Lopez 2280, CABA</td></tr>
-                <tr><td>Cardiología</td><td>Cabo Fustaret, Marcela</td><td>Belgrano</td><td>Blanco Encalada 2387, CABA</td></tr>
-                <tr><td>Dermatología</td><td>Abad, María Eugenia</td><td>Belgrano</td><td>Vidal 2016, CABA</td></tr>
-                <tr><td>Ginecología</td><td>González, Gustavo F.</td><td>Belgrano</td><td>Aguilar 2580, CABA</td></tr>
-                <tr><td>Neurología</td><td>Pettinicchi, Juan Pablo</td><td>Belgrano</td><td>Ciudad de la Paz 1735, CABA</td></tr>
-                <tr><td>Pediatría</td><td>Ameri Camila Belen</td><td>Belgrano</td><td>Estomba 1710, CABA</td></tr>
-                <tr><td>Endocrinología</td><td>Rujelman Rocío</td><td>Bernal</td><td>26 de Julio de 1890 N°298, Bs.As (Sur)</td></tr>
-                <tr><td>Clínica Médica</td><td>Batastini Alejandro Fabian</td><td>Boulogne</td><td>Joaquin V. Gonzalez 753, Bs.As (Norte)</td></tr>
-                <tr><td>Cardiología</td><td>Garcia Aguirre, Alejandro</td><td>Caballito</td><td>Av. Rivadavia 6094, CABA</td></tr>
-                <tr><td>Clínica Médica</td><td>Baldomir, Claudio Alejandro</td><td>Caballito</td><td>Rosario 441, CABA</td></tr>
-                <tr><td>Pediatría</td><td>Méndez, José</td><td>Caballito</td><td>Ambrosetti 248, CABA</td></tr>
-                <tr><td>Clínica Médica</td><td>Gigler, María Cristina</td><td>Ciudad de Buenos Aires</td><td>Av. Pueyrredón 1716, CABA</td></tr>
-                <tr><td>Oftalmología</td><td>Comastri Lucia</td><td>Canning</td><td>Giribone 909, Gran Bs.As (Sur)</td></tr>
-                <tr><td>Ortopedia y Traumatología</td><td>Lojo Adrian</td><td>Caseros</td><td>Aviador Pluschow 6273, Bs.As (NorOeste)</td></tr>
-                <tr><td>Kinesiología Adultos</td><td>Olmo Martin</td><td>Castelar</td><td>Gobernador Inocencio Arias 3059, Bs.As (Oeste)</td></tr>
-                <tr><td>Pediatría</td><td>Di Martino, Federico</td><td>Colegiales</td><td>Palpa 3213, CABA</td></tr>
-                <tr><td>Clínica Médica</td><td>Viola Claudio Martin</td><td>Del Viso</td><td>Los Crisantemos 392, Bs.As (Norte)</td></tr>
-                <tr><td>Psicología Adolescentes y Adultos</td><td>Barcala, Laura</td><td>El Talar de Pacheco</td><td>Colombia 1446, Bs.As (Norte)</td></tr>
-                <tr><td>Clínica Médica</td><td>Failo, Agustina</td><td>Escobar</td><td>Av. de Los Lagos s/n, Bs.As (Norte)</td></tr>
-                <tr><td>Pediatría</td><td>Sanchez Belvisi, Viviana</td><td>Flores</td><td>Av. Nazca 388, CABA</td></tr>
-                <tr><td>Kinesiología Adultos</td><td>Cassotto, Ignacio Luis</td><td>Floresta</td><td>Pasaje Haiti 4150, CABA</td></tr>
-                <tr><td>Pediatría</td><td>Lujan Maria Elisa</td><td>Florida</td><td>Francisco Melo 1819, Bs.As (Norte)</td></tr>
-                <tr><td>Clínica Médica</td><td>Perret, María Clara</td><td>General Pacheco</td><td>Gral. Artigas 3188, Bs.As (Norte)</td></tr>
-                <tr><td>Ginecología</td><td>Valls Fuentes, María José</td><td>Gregorio Laferrere</td><td>Av. Luro 6389, Bs.As (Oeste)</td></tr>
-                <tr><td>Kinesiología Adultos</td><td>Olmo Martin</td><td>Haedo</td><td>Congreso 1511, Bs.As (Oeste)</td></tr>
-                <tr><td>Pediatría</td><td>Rogers, Viviana Carola</td><td>Hudson</td><td>Av.Gutierrez 4840, Bs.As (Sur)</td></tr>
-                <tr><td>Kinesiología Adultos</td><td>Silva Garcia Santiago</td><td>Ituzaingó</td><td>Gabriela Mistral 1374, Bs.As (Oeste)</td></tr>
-                <tr><td>Kinesiología Adultos</td><td>Caldara, Betina</td><td>Liniers</td><td>Pieres 569, CABA</td></tr>
-                <tr><td>Clínica Médica</td><td>Batastini Alejandro Fabian</td><td>Martínez</td><td>Juncal 1143, Bs.As (Norte)</td></tr>
-                <tr><td>Clínica Médica</td><td>Heinzelmann, Elena M.</td><td>Monte Castro</td><td>Segurola 2127, CABA</td></tr>
-                <tr><td>Clínica Médica</td><td>Carenzio y Equipo</td><td>Lomas de Zamora</td><td>Juan Larrea 496, Bs.As (Sur)</td></tr>
-                <tr><td>Pediatría</td><td>Di Martino, Federico</td><td>Luján</td><td>Av. Flandes 351, Bs.As (Oeste)</td></tr>
-            </tbody>
-        </table>
+            <div class="tarjeta-medico">
+                <img src="../fotos/2.jpg" alt="Dr. Aboy Manuel" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dr. Manuel Aboy</h3>
+                    <p class="especialidad">Traumatologìa</p>
+                    <p>Matrícula: 254796</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/3.jpg" alt="Dr. Rizzo" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dr. Osvaldo Rizzo</h3>
+                    <p class="especialidad">Clínica Médica</p>
+                    <p>Matrícula: 482365 </p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/4.jpg" alt="Dra. Chan" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Maía Chan</h3>
+                    <p class="especialidad">Psicología</p>
+                    <p>Matrícula: 823654 </p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/5.jpg" alt="Dra. Fuente" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Hilda Fuente</h3>
+                    <p class="especialidad">Neurologìa</p>
+                    <p>Matrícula: 221896</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/6.jpg" alt="Dra. Arce" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Florencia Arce</h3>
+                    <p class="especialidad">Nutrición</p>
+                    <p>Matrícula: 465686</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/7.jpg" alt="Dra. Ramirez" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Débora Ramírez</h3>
+                    <p class="especialidad">Cirugía</p>
+                    <p>Matrícula: 7785462</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/8.jpg" alt="Dra. López" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Ana López</h3>
+                    <p class="especialidad">Pediatría</p>
+                    <p>Matrícula: 889236</p>
+                </div>
+            </div>
+
+            <div class="tarjeta-medico">
+                <img src="../fotos/9.jpg" alt="Dra. Majer" class="foto-medico">
+                <div class="info-principal">
+                    <h3>Dra. Leticia Majer</h3>
+                    <p class="especialidad">Obstetricia</p>
+                    <p>Matrícula: 387236.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
-                        <!-- cdn / bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Footer estilo admin -->
+    <footer class="pie-pagina mt-4">
+        <p>© 2025 Clínica IDW - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

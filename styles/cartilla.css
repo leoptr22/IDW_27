@@ -1,61 +1,153 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e6f0fa;
-    color: #003366;
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Major+Mono+Display&family=Merienda&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+/* ==========================
+   Variables globales
+========================== */
+:root {
+    --color-principal: #3a7fb8;  /* Azul principal */
+    --color-texto: #333333;      /* Gris oscuro */
+    --sombra-tarjeta: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --color-footer: #333333;
+    --color-footer-texto: #ffffff;
+}
+
+/* ==========================
+   Reset y base
+========================== */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-header {
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(58, 127, 184, 0.1);
+    color: var(--color-texto);
+}
+
+
+.encabezado {
     text-align: center;
-    background: linear-gradient(to right, #0059b3, #66b3ff);
+    padding: 20px 5%;
+}
+
+.franja-titulo {
+    background-color: #3a7fb8; 
     color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.idw {
+  text-align: center;
+  background-color: rgba(79, 149, 207, 0.5);
+  color: white;
+  margin-top: 80px;
+  padding: 20px 0;
+  font-family: 'Major Mono Display', Arial, sans-serif;
+  font-size: 36px;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+
+
+
+.contenedor-principal {
+    padding: 30px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
-/* Tabla */
-table {
-    width: 95%;
-    margin: 30px auto;
-    border-collapse: collapse;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+.contenedor-principal h1,
+.contenedor-principal h2,
+.titulo-seccion {
+    font-family: 'Arial', sans-serif; 
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.titulo-seccion {
+    text-align: center;
+    color: var(--color-principal);
+    margin-bottom: 25px;
+    font-size: 2em;
+    border-bottom: 2px solid var(--color-principal);
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+
+.lista-medicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta-medico {
+    background-color: rgba(58, 127, 184, 0.1); 
     border-radius: 8px;
-    overflow: hidden;
+    box-shadow: var(--sombra-tarjeta);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-thead {
-    background-color: #0059b3;
-    color: white;
+.tarjeta-medico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
-thead th {
-    padding: 12px;
-    text-align: left;
+
+.foto-medico {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--color-principal);
 }
 
-tbody tr {
-    background-color: #cce0ff;
-    transition: background-color 0.3s;
+.info-principal p {
+    color: var(--color-texto); 
+    font-size: 0.9em;
+
 }
 
-tbody tr:nth-child(even) {
-    background-color: #99c2ff;
+.especialidad {
+    display: inline-block;
+    background-color: #c0c0c0;  
+    color: #333333;             
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-tbody tr:hover {
-    background-color: #66b3ff;
+
+.pie-pagina {
+    background-color: var(--color-footer);
+    color: var(--color-footer-texto);
+    text-align: center;
+    padding: 20px 5%;
+    margin-top: 30px;
+    font-size: 0.9em;
 }
 
-tbody td {
-    padding: 10px;
-    border-bottom: 1px solid #b3d1ff;
+
+@media (max-width: 768px) {
+    .lista-medicos {
+        grid-template-columns: 1fr;
+    }
 }
