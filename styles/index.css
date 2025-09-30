@@ -29,7 +29,7 @@
     background-image: url('https://imgs.search.brave.com/WsnejdEZp7bTQtUZxGaiymGVFi_36CisBG23vWgLFYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtZ3JhdGlz/L21lZGljYS1lbS1z/ZXUtY29uc3VsdG9y/aW8tY29tLWVzcGFj/by1kZS1jb3BpYV8y/My0yMTQ4OTQ3NjMy/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: auto;
     color: white;
     text-align: center;
     border-radius: 0 0 10px 10px;
@@ -48,7 +48,7 @@
 }
 
 .mainidw_index{
-    height: 100vh;
+    height: 150vh;
     padding: 0;
     box-sizing: border-box;
     background: rgba(196, 208, 212, 0.95);
@@ -103,13 +103,60 @@
 }
 
 
+ .coberturas h2 {
+  margin-top: 20px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    }
 
+    .coberturas p {
+    font-family: 'Tuffy', Arial, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+  .logo-obras {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: transform 0.3s;
+}
+
+.logo-obras:hover {
+    transform: scale(1.1);
+    border-color: #2c3e50;
+}
+
+
+    .obrassociales img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid #ccc;
+    transition: transform 0.3s;
+    }
+
+    .obrassociales img:hover {
+    transform: scale(1.1);
+    border-color: #2c3e50;
+    }
+
+   
 
 
 
     .swiper {
-      width: 80%;
-      height: 50%;
+      width: 60%;
+      height: 30%;
     }
 
     .swiper-slide {
