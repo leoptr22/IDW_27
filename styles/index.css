@@ -26,7 +26,8 @@
 
 .header {
     position: relative;
-    background-image: url('https://imgs.search.brave.com/WsnejdEZp7bTQtUZxGaiymGVFi_36CisBG23vWgLFYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtZ3JhdGlz/L21lZGljYS1lbS1z/ZXUtY29uc3VsdG9y/aW8tY29tLWVzcGFj/by1kZS1jb3BpYV8y/My0yMTQ4OTQ3NjMy/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA');
+    background-image: url("../Assets/Estudios/swiper_clinica/portada.png");
+    margin-top: 50px;
     background-size: cover;
     background-position: center;
     height: auto;
@@ -42,17 +43,17 @@
     font-size: 20px;
     color: #000000ff;
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 0px;
+    padding: 0px;
     border-radius: 10px;
 }
 
 .mainidw_index{
-    height: 150vh;
-    padding: 0;
+    min-height: 120vh;
+    
     box-sizing: border-box;
     background: rgba(196, 208, 212, 0.95);
-    margin: 0;
+    
     
 }
 
@@ -130,6 +131,14 @@
     transition: transform 0.3s;
 }
 
+.dark-overlay {
+     background-color: rgba(0, 0, 0, 0.4); 
+    
+   padding: 10px; 
+    
+    border-radius: 5px; 
+}
+
 .logo-obras:hover {
     transform: scale(1.1);
     border-color: #2c3e50;
@@ -156,9 +165,10 @@
 
     .swiper {
       width: 60%;
-      height: 30%;
+      height: 300%;
     }
 
+ 
     .swiper-slide {
       text-align: center;
       font-size: 18px;

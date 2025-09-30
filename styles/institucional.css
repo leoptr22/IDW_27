@@ -11,6 +11,27 @@
   height: auto;
 }
 
+
+.dark-overlay {
+     background-color: rgba(0, 0, 0, 0.4); 
+    
+   padding: 10px; 
+    
+    border-radius: 5px; 
+}
+
+.header_contacto{
+    background-image: url("../Assets/Estudios/swiper_clinica/portada.png");
+    margin-top: 70px;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
 .info-institucional :hover {
   
   color: #0e3d66;

@@ -5,6 +5,9 @@
     background-color: rgba(57, 94, 124, 0.5);
     
 }
+footer {
+  margin-top: auto;
+}
 
 .footer a {
     color: #485875ff;

@@ -8,16 +8,35 @@
     background-color: #7fb5d4ff;
 }
 
-
-.btn {
-    padding: 10px 30px;
-    margin-bottom: 10px;
-    background-color: #007bff;
+.header_admin{
+     
+    position: relative;
+    background-image: url('https://imgs.search.brave.com/WsnejdEZp7bTQtUZxGaiymGVFi_36CisBG23vWgLFYk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtZ3JhdGlz/L21lZGljYS1lbS1z/ZXUtY29uc3VsdG9y/aW8tY29tLWVzcGFj/by1kZS1jb3BpYV8y/My0yMTQ4OTQ3NjMy/LmpwZz9zZW10PWFp/c19oeWJyaWQmdz03/NDA');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
 }
+
+
+button.btn{
+            background: linear-gradient(45deg, #66a4eaff, #4b69a2ff);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
 .form-input {
     display: flex;
     flex-direction: column;

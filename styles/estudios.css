@@ -1,5 +1,15 @@
 
-
+.header_contacto{
+    background-image: url("../Assets/Estudios/swiper_clinica/portada.png");
+    margin-top: 70px;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
 
 .card-estudio h4 {
   margin: 0;
@@ -10,3 +20,11 @@
   color: #02364e;  
   font-size: 2em;
   margin-bottom: 10px;}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.4); 
+    
+   padding: 10px; 
+    
+   border-radius: 5px; 
+}

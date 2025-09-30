@@ -2,7 +2,6 @@
 .mainidw{
     font-family: Arial, sans-serif;
     height: auto;
-    
     margin: 0;
     padding: 40px 20px;
     box-sizing: border-box;
@@ -21,10 +20,11 @@
             line-height: 1.6;
 }
 
-.btn{
+button.btn {
             background: linear-gradient(45deg, #66a4eaff, #4b69a2ff);
             color: white;
             padding: 15px 30px;
+            margin-bottom: 50px;
             border: none;
             border-radius: 12px;
             font-size: 16px;
@@ -33,8 +33,38 @@
             transition: all 0.3s ease;
             display: inline-block;
             text-decoration: none;
-            margin-top: 70px;}
+            margin-top: 250px;
+            
+        } 
 
+
+
+button.btn_contacto{
+
+     background: linear-gradient(45deg, #66a4eaff, #4b69a2ff);
+            color: white;
+            padding: 15px 30px;
+            margin: 0;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 150px;
+           
+
+}
+
+
+.btn_contacto:hover{
+            background: linear-gradient(45deg, #4b69a2ff, #66a4eaff);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        
+        }
 
 .btn:hover{
             background: linear-gradient(45deg, #4b69a2ff, #66a4eaff);
@@ -44,6 +74,7 @@
         }
 
 .bienvenida{
+    padding: 30px;
     text-align: center;
     color: white;
     font-size: 36px;
@@ -52,11 +83,3 @@
     color: rgba(246, 246, 252, 1);
 }
 
-.h2{
-    text-align: center;
-    color: white;
-    font-size: 28px;
-    margin: 20px 0 10px 0;
-    font-weight: bold;
-    color: #1e0b75ff;
-}

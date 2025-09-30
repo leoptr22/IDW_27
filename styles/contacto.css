@@ -12,6 +12,20 @@ body {
 
 }
 
+.header_contacto{
+    background-image: url("../Assets/Estudios/swiper_clinica/portada.png");
+    margin-top: 70px;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+
+
 .contacto-container {
   max-width: 600px;
   margin: 60px auto;
@@ -61,6 +75,7 @@ body {
   background: linear-gradient(45deg, #66a4ea, #4b69a2);
   color: white;
   border: none;
+  
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
