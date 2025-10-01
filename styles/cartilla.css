@@ -4,20 +4,16 @@
 
 
 
-/* ==========================
-   Variables globales
-========================== */
+
 :root {
-    --color-principal: #3a7fb8;  /* Azul principal */
-    --color-texto: #333333;      /* Gris oscuro */
+    --color-principal: #3a7fb8; 
+    --color-texto: #333333;      
     --sombra-tarjeta: 0 2px 6px rgba(0, 0, 0, 0.15);
     --color-footer: #333333;
     --color-footer-texto: #ffffff;
 }
 
-/* ==========================
-   Reset y base
-========================== */
+
 * {
     box-sizing: border-box;
     margin: 0;
