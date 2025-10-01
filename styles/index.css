@@ -26,11 +26,10 @@
 
 .header {
     position: relative;
-    background-image: url("../Assets/Estudios/swiper_clinica/portada.png");
-    margin-top: 50px;
+    background-image: url("../Assets/Estudios/swiper_clinica/11.png");
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 100vh;
     color: white;
     text-align: center;
     border-radius: 0 0 10px 10px;
@@ -43,9 +42,10 @@
     font-size: 20px;
     color: #000000ff;
     text-align: center;
-    margin: 0px;
+    margin-top: 200px;
     padding: 0px;
     border-radius: 10px;
+    
 }
 
 .mainidw_index{
@@ -55,6 +55,18 @@
     background: rgba(196, 208, 212, 0.95);
     
     
+}
+
+.anexo{
+  background: rgba(196, 208, 212, 0.95);
+}
+
+.card-body:hover {
+  background-color: #c1c3c4ff; 
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease;
+  
 }
 
 .idw {
