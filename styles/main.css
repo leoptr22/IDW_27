@@ -21,7 +21,7 @@
 }
 
 button.btn {
-            background: linear-gradient(45deg, #66a4eaff, #4b69a2ff);
+            background: linear-gradient(45deg, #66a4ea90, #4b69a290);
             color: white;
             padding: 15px 30px;
             margin-bottom: 50px;
@@ -41,7 +41,7 @@ button.btn {
 
 button.btn_contacto{
 
-     background: linear-gradient(45deg, #66a4eaff, #4b69a2ff);
+            background: linear-gradient(45deg, #66a4ea90, #4b69a290);
             color: white;
             padding: 15px 30px;
             margin: 0;
