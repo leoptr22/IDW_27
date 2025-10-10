@@ -1,76 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turnos</title>
-    <link rel="stylesheet" href="../styles/turnos.css">
-    <link rel="stylesheet" href="../styles/index.css">
-  
-    <!-- cdn / bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnos</title>
 
+ 
+  <link rel="stylesheet" href="../styles/turnos.css">
+  <link rel="stylesheet" href="../styles/index.css">
+
+ 
+ <link 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+  rel="stylesheet">
 </head>
-<body class="bodyturnos">
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg fixed-top bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../Assets/Estudios/logo idw.png" class="d-inline-block align-text-top" style="height: 50px;" alt="logo">
-      </a>
+<body class="bg-secondary bg-opacity-25">
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
-        aria-controls="menu" aria-expanded="false" aria-label="Menú">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/cartilla.html">Cartilla médica</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/institucional.html">Institucional</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/estudios.html">Especialidades</a></li>
-          <li class="nav-item"><a class="nav-link" href="../pages/admin.html">Admin</a></li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../Assets/Estudios/logo idw.png" alt="logo" height="50">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/cartilla.html">Cartilla médica</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/institucional.html">Institucional</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/estudios.html">Especialidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/admin.html">Admin</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+
+  
+  <section class="pt-5 mt-5 text-center">
+    <h1 class="text-primary fw-bold">Clínica IDW S.A.</h1>
+    <h2 class="mt-3">Reserva tu turno médico</h2>
+  </section>
+
+  
+  <main class="container my-5">
+    <div class="card shadow-lg p-4 mx-auto" style="max-width: 400px;">
+      <form id="turnoForm">
+
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="profesionales" class="form-label">Profesional:</label>
+          <select id="profesionales" name="profesional" class="form-select" required></select>
+        </div>
+
+        <div class="mb-3">
+          <label for="especialidades" class="form-label">Especialidad:</label>
+          <select id="especialidades" name="especialidad" class="form-select" required></select>
+        </div>
+
+        <div class="mb-3">
+          <label for="fecha" class="form-label">Fecha:</label>
+          <input type="date" id="fecha" name="fecha" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="hora" class="form-label">Hora:</label>
+          <input 
+            type="time" 
+            id="hora" 
+            name="hora" 
+            step="1800" 
+            min="08:00" 
+            max="18:00" 
+            class="form-control" 
+            required
+          >
+          <div class="form-text">Seleccione una hora entre 08:00 y 18:00, en intervalos de 30 minutos.</div>
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Reservar Turno</button>
+        </div>
+
+      </form>
     </div>
-  </nav>
-        <h1 class="idw ">Clinica IDW SA </h1>
-    </header>
+  </main>
 
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
-    <h1 class="turnos">Turnos</h1>
-    <h2 class="turnos">Reserva tu turno médico</h2>
-    <form id="turnoForm" class="turno-form">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="profesional">Profesional</label>
-        <select id="profesionales" name="profesional" required>
-        </select>
-        <br>
-        <label for="especialidad">Especialidad:</label>
-        <select id="especialidades" name="especialidad" required>
-        
-        </select>
-        <br>
-        <label for="fecha">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" required>
-        <br>
-        <label for="hora">Hora:</label>
-        <input type="time" id="hora" name="hora" required>
-        <br>
-        <button type="submit" >Reservar Turno</button>
-    </form>
+  
+  <script src="../utils/lista_especialidades.js"></script>
+  <script src="../utils/listar_prof.js"></script>
+  <script src="../controllers/turnos.js"></script>
 </body>
-<script src="../utils/lista_especialidades.js"></script>
-<script src="../utils/listar_prof.js"></script>
-<script src="../controllers/turnos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
 </html>

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   turnos.forEach((turno) => {
     const item = document.createElement("li");
     item.innerHTML = `
-      <strong>${turno.nombre}</strong> - ${turno.email} <br />
+      <strong> Turno a nombre de:  ${turno.nombre}</strong> - Su E-mail:  ${turno.email} <br />
       Fecha: ${turno.fecha} Profesional: ${turno.profesional} | Hora: ${turno.hora}
     `;
     lista.appendChild(item);

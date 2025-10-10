@@ -1,124 +1,58 @@
 {
   "medicos": [
     {
-      "nombre": "Juan",
-      "apellido": "Pérez",
+      "nombre": "Dr. Juan Pérez",
       "especialidad": "Cardiología",
-      "dias_trabajo": ["Lunes", "Miércoles", "Viernes"],
-      "obras_sociales": ["OSDE", "Swiss Medical", "Galeno"],
-      "telefono": "11-2345-6789"
+      "matricula": "256985",
+      "foto": "../fotos/1.jpg"
     },
     {
-      "nombre": "María",
-      "apellido": "González",
-      "especialidad": "Pediatría",
-      "dias_trabajo": ["Martes", "Jueves", "Sábado"],
-      "obras_sociales": ["OSDE", "Medifé", "Sancor Salud"],
-      "telefono": "11-9876-5432"
-    },
-    {
-      "nombre": "Carlos",
-      "apellido": "Rodríguez",
+      "nombre": "Dr. Manuel Aboy",
       "especialidad": "Traumatología",
-      "dias_trabajo": ["Lunes", "Martes", "Miércoles", "Jueves"],
-      "obras_sociales": ["Swiss Medical", "Omint", "Hospital Italiano"],
-      "telefono": "11-4567-8901"
+      "matricula": "254796",
+      "foto": "../fotos/2.jpg"
     },
     {
-      "nombre": "Laura",
-      "apellido": "Martínez",
-      "especialidad": "Dermatología",
-      "dias_trabajo": ["Miércoles", "Viernes", "Sábado"],
-      "obras_sociales": ["OSDE", "Galeno", "Medicus"],
-      "telefono": "11-3456-7890"
+      "nombre": "Dr. Osvaldo Rizzo",
+      "especialidad": "Clínica Médica",
+      "matricula": "482365",
+      "foto": "../fotos/3.jpg"
     },
     {
-      "nombre": "Ricardo",
-      "apellido": "López",
-      "especialidad": "Oftalmología",
-      "dias_trabajo": ["Lunes", "Jueves", "Viernes"],
-      "obras_sociales": ["Swiss Medical", "OSDE", "Prevención Salud"],
-      "telefono": "11-7890-1234"
+      "nombre": "Dra. Maía Chan",
+      "especialidad": "Psicología",
+      "matricula": "823654",
+      "foto": "../fotos/4.jpg"
     },
     {
-      "nombre": "Ana",
-      "apellido": "Fernández",
-      "especialidad": "Ginecología",
-      "dias_trabajo": ["Lunes", "Miércoles", "Viernes"],
-      "obras_sociales": ["OSDE", "Medifé", "Sancor Salud"],
-      "telefono": "11-6543-2109"
-    },
-    {
-      "nombre": "Pablo",
-      "apellido": "Sánchez",
+      "nombre": "Dra. Hilda Fuente",
       "especialidad": "Neurología",
-      "dias_trabajo": ["Martes", "Jueves", "Sábado"],
-      "obras_sociales": ["Swiss Medical", "Galeno", "Omint"],
-      "telefono": "11-3210-9876"
+      "matricula": "221896",
+      "foto": "../fotos/5.jpg"
     },
     {
-      "nombre": "Lucía",
-      "apellido": "Díaz",
-      "especialidad": "Endocrinología",
-      "dias_trabajo": ["Lunes", "Miércoles", "Viernes"],
-      "obras_sociales": ["OSDE", "Medicus", "Hospital Alemán"],
-      "telefono": "11-5432-1098"
+      "nombre": "Dra. Florencia Arce",
+      "especialidad": "Nutrición",
+      "matricula": "465686",
+      "foto": "../fotos/6.jpg"
     },
     {
-      "nombre": "Jorge",
-      "apellido": "Gómez",
-      "especialidad": "Psiquiatría",
-      "dias_trabajo": ["Martes", "Jueves", "Sábado"],
-      "obras_sociales": ["OSDE", "Swiss Medical", "Prevención Salud"],
-      "telefono": "11-8765-4321"
+      "nombre": "Dra. Débora Ramírez",
+      "especialidad": "Cirugía",
+      "matricula": "7785462",
+      "foto": "../fotos/7.jpg"
     },
     {
-      "nombre": "Silvia",
-      "apellido": "Ruiz",
-      "especialidad": "Oncología",
-      "dias_trabajo": ["Lunes", "Miércoles", "Viernes"],
-      "obras_sociales": ["Galeno", "Medifé", "Hospital Italiano"],
-      "telefono": "11-2109-8765"
+      "nombre": "Dra. Ana López",
+      "especialidad": "Pediatría",
+      "matricula": "889236",
+      "foto": "../fotos/8.jpg"
     },
     {
-      "nombre": "Diego",
-      "apellido": "Torres",
-      "especialidad": "Urología",
-      "dias_trabajo": ["Martes", "Jueves", "Sábado"],
-      "obras_sociales": ["OSDE", "Swiss Medical", "Omint"],
-      "telefono": "11-1098-7654"
-    },
-    {
-      "nombre": "Valeria",
-      "apellido": "Mendoza",
-      "especialidad": "Neumonología",
-      "dias_trabajo": ["Lunes", "Miércoles", "Viernes"],
-      "obras_sociales": ["Medicus", "Sancor Salud", "Hospital Alemán"],
-      "telefono": "11-7654-3210"
-    },
-    {
-      "nombre": "Gabriel",
-      "apellido": "Vargas",
-      "especialidad": "Gastroenterología",
-      "dias_trabajo": ["Martes", "Jueves", "Sábado"],
-      "obras_sociales": ["OSDE", "Galeno", "Medifé"],
-      "telefono": "11-4321-0987"
-    },
-    {
-      "nombre": "Florencia",
-      "apellido": "Castro",
-      "especialidad": "Reumatología",
-      "dias_trabajo": ["Lunes", "Miércoles", "Viernes"],
-      "obras_sociales": ["Swiss Medical", "Omint", "Hospital Italiano"],
-      "telefono": "11-8901-2345"
-    },
-    {
-      "nombre": "Hernán",
-      "apellido": "Suárez",
-      "especialidad": "Otorrinolaringología",
-      "dias_trabajo": ["Martes", "Jueves", "Sábado"],
-      "obras_sociales": ["OSDE", "Medicus", "Prevención Salud"],
-      "telefono": "11-6789-0123"
+      "nombre": "Dra. Leticia Majer",
+      "especialidad": "Obstetricia",
+      "matricula": "387236",
+      "foto": "../fotos/9.jpg"
     }
   ]
 }
