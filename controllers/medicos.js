@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let todosLosMedicos = [];
   let medicoSeleccionado = null;
 
-  // Médicos iniciales
+  
   const medicosIniciales = [
     { nombre:"Dr. Juan Pérez", especialidad:"Cardiología", matricula:"256985", foto:"../fotos/1.jpg" },
     { nombre:"Dr. Manuel Aboy", especialidad:"Traumatología", matricula:"254796", foto:"../fotos/2.jpg" },
     { nombre:"Dr. Osvaldo Rizzo", especialidad:"Clínica Médica", matricula:"482365", foto:"../fotos/3.jpg" }
   ];
 
-  // Cargar médicos desde localStorage o iniciales
+ 
   function cargarMedicos() {
     const stored = JSON.parse(localStorage.getItem("medicos"));
     if (!stored) {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarMedicos();
   }
 
-  // Mostrar lista
+  
   function mostrarMedicos() {
     listado.innerHTML = "";
     todosLosMedicos.forEach(m => {
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       listado.appendChild(card);
     });
 
-    // Delegar botones
+   
     document.querySelectorAll(".btn-editar").forEach(btn => {
     btn.addEventListener("click", () => editarMedico(btn.dataset.matricula));
     });
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Agregar médico
+  
   formAgregar.addEventListener("submit", e => {
     e.preventDefault();
     const nuevo = {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarMedicos();
   });
 
-  // Editar médico
+ 
   function editarMedico(matricula) {
     medicoSeleccionado = todosLosMedicos.findIndex(m => m.matricula === matricula);
     if (medicoSeleccionado === -1) return;
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modalEditar.show();
   }
 
-  // Guardar cambios
+  
   formEditar.addEventListener("submit", e => {
     e.preventDefault();
     if (medicoSeleccionado === null) return;
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarMedicos();
   });
 
-  // Borrar médico
+ 
   function borrarMedico(matricula) {
     if (!confirm("¿Desea borrar este médico?")) return;
     todosLosMedicos = todosLosMedicos.filter(m => m.matricula !== matricula);
@@ -114,6 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarMedicos();
   }
 
-  // Inicializar
+ 
   cargarMedicos();
 });
