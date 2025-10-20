@@ -1,17 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("loginForm");
+const loginForm = document.getElementById('loginForm');
+const usernameInput = document.getElementById('usernameInput');
+const passwordInput = document.getElementById('passwordInput');
+const mensajeDiv = document.getElementById('mensaje');
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
 
-        const email = document.getElementById("loginEmail").value;
-        const password = document.getElementById("loginPassword").value;
+function mostrarMensaje (texto, tipo = "danger") {
+        mensajeDiv.innerHTML = `
+  <div class="d-flex justify-content-center "> 
+    <div class="alert alert-${tipo}" role="alert">${texto}</div>
+  </div>`;
+    }
 
-        if (email === "admin@idw.com" && password === "1234") {
-            
-            window.location.href = "dashboard.html";
-        } else {
-            alert("Credenciales incorrectas");
-        }
-    });
-});
+
+loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    const usuarioValido = usuarios.find(usuarios => usuarios.username === username && usuarios.password === password);
+    
+
+    if (usuarioValido) {
+        sessionStorage.setItem('nombre_admin', username);
+        mostrarMensaje('Inicio de sesión exitoso. Redirigiendo...', 'success');
+        setTimeout(() => {
+            window.location.href = 'dashboard.html';
+        }, 1500);
+    } else {
+        mostrarMensaje('Usuario o contraseña incorrectos. Inténtelo de nuevo.', 'danger');  
+    }
+
+    } )
+
+
+

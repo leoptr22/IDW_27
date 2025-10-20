@@ -5,34 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin - Clínica IDW</title>
 
-  >
   <link rel="stylesheet" href="../styles/admin.css">
   <link rel="stylesheet" href="../styles/index.css">
   <link rel="stylesheet" href="../styles/main.css">
 
- 
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
-   
   >
 </head>
 
 <body class="bg-light">
 
-  
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
           <img src="../Assets/Estudios/logo idw.png" alt="logo" height="50">
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
           aria-controls="menu" aria-expanded="false" aria-label="Menú">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
@@ -45,40 +39,39 @@
         </div>
       </div>
     </nav>
-
     <div class="text-center mt-5 pt-4">
       <h1 class="text-primary fw-bold text-muted">Clínica IDW S.A.</h1>
     </div>
   </header>
 
   
-  <main class="container my-5 pt-5  rounded">
+  <main class="container my-3 pt-2 rounded"> 
     <div class="row justify-content-center">
-      <div class="col-md-6">
+      
+      <div class="col-12 col-md-3"> 
 
-        <div class="card shadow-lg p-4">
-          <div class="text-center mb-4">
+        <div class="card shadow-lg p-2"> 
+          <div class="text-center mb-2"> 
             <h2 class="fw-bold text-muted">BIENVENIDO</h2>
-            <p class="text-secondary">Accede al panel de administración</p>
+            <p class="text-secondary mb-2">Accede al panel de administración</p>
           </div>
 
-          
           <form class="needs-validation" id="loginForm" novalidate>
-            <div class="mb-3">
-              <label for="loginEmail" class="form-label">Email:</label>
-              <input type="email" id="loginEmail" name="email" class="form-control form-control border-3 border-primary" autocomplete="email" required>
+            <div class="mb-2">
+              <label for="usernameInput" class="form-label mb-1">Usuario:</label>
+              <input type="text" id="usernameInput" name="user" class="form-control form-control-sm border-3 border-primary" autocomplete="username" required>
             </div>
 
-            <div class="mb-3">
-              <label for="loginPassword" class="form-label">Contraseña:</label>
-              <input type="password" id="loginPassword" name="password" class=" form-control border-3 border-primary" required>
+            <div class="mb-2">
+              <label for="passwordInput" class="form-label mb-1">Contraseña:</label>
+              <input type="password" id="passwordInput" name="password" class=" form-control form-control-sm border-3 border-primary" required>
             </div>
 
-            <div class="d-grid mb-3">
-              <button type="submit" class="btn btn-primary btn-lg">Iniciar Sesión</button>
+            <div class="d-grid mb-1"> 
+              <button type="submit" class="btn btn-primary btn-sm mt-2">Iniciar Sesión</button>
             </div>
-
             
+            <div id="mensaje" class="mt-2 text-center"></div>
           </form>
         </div>
 
@@ -88,9 +81,11 @@
 
 
   <script src="../utils/login.js"></script>
+  <script src="../controllers/usuarios.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
     crossorigin="anonymous"></script>
+  <script src="../controllers/script_admin/nombre_admin.js"></script>
 
 </body>
 </html>
