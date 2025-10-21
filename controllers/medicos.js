@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const formAgregar = document.getElementById("formAgregarMedico");
   const formEditar = document.getElementById("formEditarMedico");
   const modalEditar = new bootstrap.Modal(document.getElementById("modalEditarMedico"));
-
   const inputFotoAgregar = document.getElementById("agregarFoto");
   const vistaPreviaAgregar = document.getElementById("vistaPreviaAgregar");
   const inputFotoEditar = document.getElementById("editarFoto");
@@ -12,18 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
   let todosLosMedicos = [];
   let medicoSeleccionado = null;
 
-  
   const medicosIniciales = [
     { nombre: "Dr. Juan Pérez", especialidad: "Cardiología", matricula: "256985", foto: "../fotos/1.jpg" },
     { nombre: "Dr. Manuel Aboy", especialidad: "Traumatología", matricula: "254796", foto: "../fotos/2.jpg" },
     { nombre: "Dr. Osvaldo Rizzo", especialidad: "Clínica Médica", matricula: "482365", foto: "../fotos/3.jpg" }
   ];
 
-
   function cargarMedicos() {
     const stored = JSON.parse(localStorage.getItem("medicos"));
-    todosLosMedicos = stored || medicosIniciales;
-    if (!stored) localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
+    if (!stored || !Array.isArray(stored) || stored.length === 0) {
+      todosLosMedicos = [...medicosIniciales];
+      localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
+    } else {
+      todosLosMedicos = stored;
+    }
     mostrarMedicos();
   }
 
@@ -59,26 +60,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function leerImagen(input, callback) {
     const archivo = input.files[0];
-    if (!archivo) {
-      callback("");
-      return;
-    }
+    if (!archivo) { callback(""); return; }
     const reader = new FileReader();
     reader.onload = e => callback(e.target.result);
     reader.readAsDataURL(archivo);
   }
 
-  
   inputFotoAgregar.addEventListener("change", () => {
-    leerImagen(inputFotoAgregar, base64 => {
-      vistaPreviaAgregar.src = base64 || "../fotos/default.jpg";
-    });
+    leerImagen(inputFotoAgregar, base64 => { vistaPreviaAgregar.src = base64 ; });
   });
 
   inputFotoEditar.addEventListener("change", () => {
-    leerImagen(inputFotoEditar, base64 => {
-      vistaPreviaEditar.src = base64 || "../fotos/default.jpg";
-    });
+    leerImagen(inputFotoEditar, base64 => { vistaPreviaEditar.src = base64 ; });
   });
 
   formAgregar.addEventListener("submit", e => {
@@ -86,26 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const nombre = document.getElementById("nombreYapellido").value.trim();
     const especialidad = document.getElementById("especialidad").value.trim();
     const matricula = document.getElementById("matricula").value.trim();
-
-    if (!nombre || !especialidad || !matricula) {
-      alert("Por favor complete todos los campos.");
-      return;
-    }
-
+    if (!nombre || !especialidad || !matricula) { alert("Por favor complete todos los campos."); return; }
     leerImagen(inputFotoAgregar, base64 => {
-      const nuevo = {
-        nombre,
-        especialidad,
-        matricula,
-        foto: base64 || "../fotos/default.jpg"
-      };
-
+      const nuevo = { nombre, especialidad, matricula, foto: base64 || "../fotos/default.jpg" };
       todosLosMedicos.push(nuevo);
       localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
-
       formAgregar.reset();
       vistaPreviaAgregar.src = "../fotos/default.jpg";
-
       mostrarMedicos();
     });
   });
@@ -123,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
   formEditar.addEventListener("submit", e => {
     e.preventDefault();
     if (medicoSeleccionado === null) return;
-
     leerImagen(inputFotoEditar, base64 => {
       const m = todosLosMedicos[medicoSeleccionado];
       todosLosMedicos[medicoSeleccionado] = {
@@ -132,7 +111,6 @@ document.addEventListener("DOMContentLoaded", () => {
         matricula: document.getElementById("editarMatricula").value.trim(),
         foto: base64 || m.foto
       };
-
       localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
       modalEditar.hide();
       mostrarMedicos();
@@ -145,6 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
     mostrarMedicos();
   }
+
+  window.addEventListener("storage", (event) => {
+    if (event.key === "medicos") { cargarMedicos(); }
+  });
 
   cargarMedicos();
 });
