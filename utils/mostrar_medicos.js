@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     card.innerHTML = `
       
         <div class="card h-100 shadow-sm border-0">
-          <img src="../fotos/1.jpg" class="card-img-top" alt="Dr. Pérez">
+          <img src="${medico.foto}" class="card-img-top" alt="Dr. Pérez">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title fw-bold">${medico.nombre}</h5>
             <p class="card-text text-primary">${medico.especialidad}</p>
