@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Inicializa
+  // Inicia
   renderMedicos();
 
   //  para manejar el boton "borrar"
