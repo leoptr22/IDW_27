@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     { nombre: "Dr. Osvaldo Rizzo", especialidad: "Clínica Médica", matricula: "482365", foto: "../fotos/3.jpg" }
   ];
 
-  function cargarMedicos() {
-    const stored = JSON.parse(localStorage.getItem("medicos"));
-    if (!stored || !Array.isArray(stored) || stored.length === 0) {
-      todosLosMedicos = [...medicosIniciales];
-      localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
-    } else {
-      todosLosMedicos = stored;
-    }
-    mostrarMedicos();
+ function cargarMedicos() {
+  const stored = JSON.parse(localStorage.getItem("medicos"));
+  if (!stored || !Array.isArray(stored) || stored.length === 0) {
+    todosLosMedicos = [...medicosIniciales];
+    localStorage.setItem("medicos", JSON.stringify(todosLosMedicos));
+  } else {
+    todosLosMedicos = stored;
   }
+  mostrarMedicos();
+}
 
   function mostrarMedicos() {
     listado.innerHTML = "";
