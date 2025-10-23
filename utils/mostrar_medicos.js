@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("medicos", JSON.stringify(medicos));
   }
   
-  console.log("Médicos encontrados:", medicos);
 
   medicos.forEach(medico => {
     const card = document.createElement("div");
