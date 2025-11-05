@@ -7,6 +7,7 @@ export async function login(userParam, passParam) {
             body: JSON.stringify({
                 username: userParam,
                 password: passParam,
+                expiresInMins: 2, // esto es para que el token expire en 2 minutos segun la documentacion
             }),
         });
         if (!response.ok) {
