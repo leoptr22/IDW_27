@@ -7,3 +7,12 @@ integrado por
 * Rita Herrera
 
 https://github.com/leoptr22/IDW_27
+
+
+estos usuarios tienen permisos especial de vista de usuarios:
+
+	    emilys	        emilyspass	    admin	
+	    michaelw	  michaelwpass	    admin	
+	    sophiab	        sophiabpass	    admin	
+	    jamesd	        jamesdpass	    admin	
+	    emmaj	        emmajpass	    admin	

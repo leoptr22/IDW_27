@@ -15,7 +15,9 @@
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h1 class="text-primary mb-0">Dashboard</h1>
         <a href="admin.html" class="btn btn-outline-danger">Cerrar sesión</a>
-        <a href="usuarios.html" class="btn btn-outline-secondary">Usuarios Habilitados</a>
+        <button onclick="habilitadoUser()"  id="habilitado" class="btn btn-outline-secondary">Usuarios Habilitados</button>
+                    <div id="mensaje" class="mt-2 text-center"></div>
+
       </div>
 
       <h3 class="text-secondary mb-4">Bienvenido al panel de administración</h3>
@@ -106,5 +108,7 @@
   <script src="../controllers/mostrarTurnos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../controllers/medicos.js"></script>
+    <script type="module" src="../utils/login.js"></script>
+
 </body>
 </html>
