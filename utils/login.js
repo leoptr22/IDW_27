@@ -16,7 +16,7 @@ window.habilitadoUser = function habilitadoUser(){
             window.location.href = 'usuarios.html';
         }, 2000);
 } else {
-     mostrarMensaje('Acceso denegado', 'danger');
+     mostrarMensaje('Acceso denegado a usuarios', 'danger');
 }
 }
 
