@@ -8,7 +8,7 @@ export async function login(userParam, passParam) {
                 username: userParam,
                 password: passParam,
                 
-                expiresInMins: 2, // esto es para que el token expire en 2 minutos segun la documentacion
+                
             }),
         });
 
@@ -23,12 +23,12 @@ export async function login(userParam, passParam) {
                 const usersData = await respuesta.json();
             console.log("Usuarios obtenidos:", usersData);
 
-            // Encuentra el usuario que ha iniciado sesión (usamos el username para hacerlo)
+            // Encuentra el usuario que  inicio sesión 
             const user = usersData.users.find(user => user.username === userParam);
             
             if (user) {
-                // Asignamos el rol del usuario a la respuesta de login
-                data.role = user.role;  // Ahora el objeto `data` incluye el `role`
+                
+                data.role = user.role;  // Ahora el objeto data incluye role, osea user es admin o user y se lo asigna a data.role
             } else {
                 alert('No se encontró el usuario en la lista de usuarios');
                 return false;

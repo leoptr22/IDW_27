@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
       email: document.getElementById("email").value.trim().toLowerCase(),
       fecha: document.getElementById("fecha").value,
       hora: document.getElementById("hora").value,
+      obraSocial: document.getElementById("obra_social").value,
+
       profesional: selectProfesionales.value
     };
 
