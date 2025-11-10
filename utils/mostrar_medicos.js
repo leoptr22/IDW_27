@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
             <h5 class="card-title fw-bold">${medico.nombre}</h5>
             <p class="card-text text-primary">${medico.especialidad}</p>
             <p class="mt-auto mb-0"><small class="text-muted">Matrícula: ${medico.matricula}</small></p>
+            <p class="mt-auto mb-0"><small class="text-muted">Valor consulta: ${medico.consulta}</small></p>
+
           </div>
         </div>
      
