@@ -11,24 +11,41 @@
 
 <body class="bg-light">
   <div class="container py-5">
-    <div class="card shadow-lg p-4">
-      <div class="d-flex justify-content-between align-items-center mb-3">
-        <h1 class="text-primary mb-0">Dashboard</h1>
-        <a href="admin.html" class="btn btn-outline-danger">Cerrar sesión</a>
-        <button onclick="habilitadoUser()"  id="habilitado" class="btn btn-outline-secondary">Usuarios Habilitados</button>
-                    <div id="mensaje" class="mt-2 text-center"></div>
+  <div class="card shadow-lg p-4">
 
+    <div class="row align-items-center gy-2 mb-3">
+      <div class="col-12 col-md-4 text-center text-md-start">
+        <h1 class="text-primary mb-0">Dashboard</h1>
       </div>
 
-      <h3 class="text-secondary mb-4">Bienvenido al panel de administración</h3>
-      <h4 class="mb-3">Turnos Médicos Solicitados</h4>
-      <div id="turno-Form" class="border rounded p-3 bg-white">
-        <!-- Acá van los turnos -->
+      <div class="col-12 col-md-8 d-flex justify-content-center justify-content-md-end gap-2">
+        <a href="admin.html" class="btn btn-outline-danger">
+          Cerrar sesión
+        </a>
+        <button onclick="habilitadoUser()" id="habilitado" class="btn btn-outline-secondary">
+          Usuarios Habilitados
+        </button>
+      </div>
+
+      <div class="col-12">
+        <div id="mensaje" class="alert text-center mt-2 " role="alert">
+          <!-- aca se muestra el mensaje -->
+        </div>
       </div>
     </div>
-  </div>
 
-<!-- Editar Médico -->
+    <!-- contenido principal -->
+    <h3 class="text-secondary mb-4">Bienvenido al panel de administración</h3>
+    <h4 class="mb-3">Turnos Médicos Solicitados</h4>
+
+    <div id="turno-Form" class="border rounded p-3 bg-white">
+      <!-- aca van los turnos -->
+    </div>
+  </div>
+</div>
+
+
+<!-- editar Medico -->
   <div class="modal fade" id="modalEditarMedico" tabindex="-1" aria-labelledby="modalEditarMedicoLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -80,7 +97,7 @@
       </div>
     </div>
   </div>
-<!-- Agregar Médico -->
+<!-- Agregar Medico -->
  <h3 class="text-secondary mb-4 text-center">Agregar Médico</h3>
   <div class="container py-5">
     <div class="card shadow-lg p-4">

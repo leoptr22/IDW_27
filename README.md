@@ -9,6 +9,9 @@ integrado por
 https://github.com/leoptr22/IDW_27
 
 
+Super Admin: admin - 1234
+
+
 estos usuarios tienen permisos especial de vista de usuarios:
 
 	    emilys	        emilyspass	    admin	

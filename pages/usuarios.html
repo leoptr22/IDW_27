@@ -10,27 +10,27 @@
   <h1 class="text-center my-4">Usuarios Habilitados</h1>
   <button onclick="window.location.href='dashboard.html'" class="btn btn-outline-primary mx-5 mb-3">Volver al Dashboard</button>
 
-  <table class="table table-striped table-bordered mx-5 bg-white rounded shadow">
-    <thead>
+  <div class="table-responsive mx-5 bg-white rounded shadow">
+  <table class="table table-striped table-bordered mb-0">
+    <thead class="table-light">
       <tr>
         <th>Nombre</th>
         <th>Usuario</th>
-        <th> Password   </th>
-        <th> Role   </th>
-
+        <th>Password</th>
+        <th>Role</th>
         <th>Email</th>
         <th>Teléfono</th>
       </tr>
     </thead>
     <tbody id="tabla-usuarios">
-      <!-- Aca se cargaan los usuarios -->
+      <!-- Acá se cargan los usuarios -->
     </tbody>
   </table>
+</div>
 
   <script src="../controllers/users.js"></script>
 </body>
 </html>
 
 
-      <!-- hacer una validacion para identificar si el usuario es ADMIN puede abrir el boton de usuarios habilitados -->
 
