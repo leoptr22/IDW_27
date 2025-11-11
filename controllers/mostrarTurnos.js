@@ -13,10 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   turnos.forEach((turno) => {
     const item = document.createElement("li");
-    item.innerHTML = `
-      <strong> Turno a nombre de:  ${turno.nombre}</strong> <br /> | Su E-mail:  ${turno.email} <br />
-      | Fecha: ${turno.fecha} Profesional: ${turno.profesional} <br />| Hora: ${turno.hora} <br />Obra Social: ${turno.obraSocial}
-    `;
+    item.innerHTML = 
+                `
+          Turno a nombre de: <strong>${turno.nombre}</strong><br>
+          E-mail: <strong>${turno.email}</strong><br>
+          Fecha: <strong>${turno.fecha}</strong> | Profesional: <strong>${turno.profesional}</strong><br>
+          Hora: <strong>${turno.hora}</strong><br>
+          Obra Social: <strong>${turno.obraSocial}</strong>
+`
+;
     lista.appendChild(item);
   });
 

@@ -37,6 +37,20 @@ loginForm.addEventListener('submit', async function  (event) {
     event.preventDefault();
     const username = usernameInput.value.trim();
     const password = passwordInput.value.trim();
+ 
+    // Credenciales por defecto para pruebas (SuperAdmin)
+
+    if (username==="admin" || password==="1234") {
+        mostrarMensaje('Credenciales de administrador por defecto (Super Admin), redirigiendo...', 'success');
+        sessionStorage.setItem('nombre_admin', 'admin');
+        sessionStorage.setItem('token_admin', 'default_token');
+        sessionStorage.setItem('role_admin', 'admin'); // le asigno rol de administrador
+        setTimeout(() => {
+            window.location.href = 'dashboard.html';
+        }, 1500);
+        return;
+    }
+
 
     
     const usuarioValido = await login(username, password);
