@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const listaMedicos = document.getElementById("listaMedicos");
   
    const medicosIniciales = [
-    { nombre: "Dr. Juan Pérez", especialidad: "Cardiología Infantil",consulta:"$ 40000", obraSocial: "osde", matricula: "256985", foto: "./fotos/1.jpg" },
-    { nombre: "Dr. Manuel Aboy", especialidad: "Traumatología", consulta:"$ 40000", obraSocial: "Pami", matricula: "254796", foto: "./fotos/2.jpg" },
-    { nombre: "Dr. Osvaldo Rizzo", especialidad: "Clínica Médica", consulta:"$ 40000", obraSocial:"Oser", matricula: "482365", foto: "./fotos/3.jpg" }
+    { nombre: "Dr. Juan Pérez", especialidad: "Cardiología Infantil",consulta:"$ 40000", obraSocial: "osde", matricula: "256985", foto: "../fotos/1.jpg" },
+    { nombre: "Dr. Manuel Aboy", especialidad: "Traumatología", consulta:"$ 40000", obraSocial: "Pami", matricula: "254796", foto: "../fotos/2.jpg" },
+    { nombre: "Dr. Osvaldo Rizzo", especialidad: "Clínica Médica", consulta:"$ 40000", obraSocial:"Oser", matricula: "482365", foto: "../fotos/3.jpg" }
   ];
 
   let medicos = JSON.parse(localStorage.getItem("medicos"));
